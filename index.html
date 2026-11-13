@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Аутсорсинг линейного персонала для складов и производств. Подбор, оформление и сопровождение работников на объекте.">
+  <meta name="theme-color" content="#efeae6">
+  <title>Аутсорс персонала для складов и производств</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <svg class="definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <defs>
+      <clipPath id="hero-mask" clipPathUnits="objectBoundingBox">
+        <path d="M .486 0 H 1 V 1 H .432 C .337 1 .332 .925 .218 .896 C .158 .88 .094 .877 0 .864 C .029 .65 .044 .459 .087 .367 C .139 .25 .218 .204 .294 .204 H .358 C .379 .163 .401 .146 .444 .146 C .463 .146 .476 .149 .486 .153 Z"/>
+      </clipPath>
+      <symbol id="arrow" viewBox="0 0 24 12">
+        <path d="M1 6h21m-4-4 4 4-4 4"/>
+      </symbol>
+      <symbol id="bolt" viewBox="0 0 24 24">
+        <path d="M16 1 4 14h7l-3 9L21 9h-8z"/>
+      </symbol>
+      <symbol id="shield" viewBox="0 0 24 24">
+        <path d="M12 2c2.6 2.2 5.7 3.2 9 3.2v5.5c0 5.1-3.4 9.3-9 11.3-5.6-2-9-6.2-9-11.3V5.2c3.3 0 6.4-1 9-3.2z"/>
+        <path d="m8.2 11.8 2.5 2.5 4.9-5"/>
+      </symbol>
+      <symbol id="person" viewBox="0 0 24 24">
+        <circle cx="12" cy="7" r="4.5"/>
+        <path d="M3 22v-1a6 6 0 0 1 6-6h6a6 6 0 0 1 6 6v1"/>
+      </symbol>
+      <symbol id="layers" viewBox="0 0 24 24">
+        <path d="m12 3 9 4.5L12 12 3 7.5 12 3Zm4.5 6.8L21 12l-9 4.5L3 12l4.5-2.2m9 4.4 4.5 2.3-9 4.5-9-4.5 4.5-2.3"/>
+      </symbol>
+      <symbol id="phone" viewBox="0 0 24 24">
+        <path d="M6.5 2.5a1.6 1.6 0 0 0-2-.2L2.8 3.7c-1.8 1.8.5 7.4 5.4 12.3 4.8 4.8 10.3 7.1 12.1 5.4l1.5-1.8c.5-.6.4-1.5-.2-2l-3.5-2.8a1.4 1.4 0 0 0-1.9.1l-1.4 1.4c-1.4-.4-3-1.6-4.4-3s-2.5-3-3-4.4l1.4-1.4a1.4 1.4 0 0 0 .1-1.9z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Аутсорс персонала
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span>Меню</span><span class="menu-icon" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-navigation" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#process">Как работаем</a>
+        <a href="#why-us">Почему мы</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="masthead hero">
+      <section aria-labelledby="hero-heading" class="hero-intro">
+        <div class="hero-copy">
+          <p class="eyebrow">Аутсорс персонала для бизнеса</p>
+          <h1 id="hero-heading">Персонал<br> для складов<br> и производств</h1>
+          <p class="hero-note">Берём на себя поиск, оформление и управление линейным персоналом. Вы занимаетесь бизнесом.</p>
+        </div>
+        <img class="hero-photo" src="assets/hero-1280.webp"
+          srcset="assets/hero-640.webp 640w, assets/hero-1280.webp 1280w"
+          sizes="(max-width: 700px) 100vw, 55vw" width="1280" height="1024"
+          fetchpriority="high" alt="Работник в жилете в проходе между складскими стеллажами">
+      </section>
+      <ul class="hero-facts" aria-label="Условия предоставления персонала">
+        <li><strong>От 5 человек</strong><span>собираем бригады</span></li>
+        <li><strong>По всей РФ</strong><span>работаем в регионах</span></li>
+        <li><strong>От 1 дня</strong><span>вывод персонала</span></li>
+      </ul>
+    </div>
+    <section id="services" class="services section-container" aria-labelledby="services-title">
+      <div class="section-heading">
+        <p class="eyebrow">Услуги</p>
+        <h2 id="services-title">Кого предоставляем</h2>
+      </div>
+      <ul class="service-list">
+        <li>
+          <button class="service-card" type="button" aria-haspopup="dialog" aria-labelledby="warehouse-label" data-dialog="warehouse">
+            <img src="assets/warehouse-720.webp" srcset="assets/warehouse-360.webp 360w, assets/warehouse-720.webp 720w"
+              sizes="(max-width: 700px) 100vw, (min-width: 1540px) 427px, 29vw" width="720" height="576" alt="Сотрудник склада у стеллажей">
+            <span class="service-name" id="warehouse-label">Складской<br> персонал</span>
+            <svg class="line-icon service-arrow" aria-hidden="true"><use href="#arrow"/></svg>
+          </button>
+        </li>
+        <li>
+          <button class="service-card" type="button" aria-haspopup="dialog" aria-labelledby="production-label" data-dialog="production">
+            <img src="assets/production-720.webp" srcset="assets/production-360.webp 360w, assets/production-720.webp 720w"
+              sizes="(max-width: 700px) 100vw, (min-width: 1540px) 427px, 29vw" width="720" height="576" alt="Оператор в защитных наушниках у производственного оборудования">
+            <span class="service-name" id="production-label">Производственный<br> персонал</span>
+            <svg class="line-icon service-arrow" aria-hidden="true"><use href="#arrow"/></svg>
+          </button>
+        </li>
+        <li>
+          <button class="service-card" type="button" aria-haspopup="dialog" aria-labelledby="loading-label" data-dialog="loading">
+            <img src="assets/loading-720.webp" srcset="assets/loading-360.webp 360w, assets/loading-720.webp 720w"
+              sizes="(max-width: 700px) 100vw, (min-width: 1540px) 427px, 29vw" width="720" height="576" alt="Грузчик перемещает коробки на складе">
+            <span class="service-name" id="loading-label">Грузчики<br> и разнорабочие</span>
+            <svg class="line-icon service-arrow" aria-hidden="true"><use href="#arrow"/></svg>
+          </button>
+        </li>
+      </ul>
+    </section>
+
+    <section id="process" class="process section-container" aria-labelledby="process-title">
+      <div class="section-heading">
+        <p class="eyebrow">Как мы работаем</p>
+        <h2 id="process-title">Простой и понятный процесс</h2>
+      </div>
+      <ol class="process-list" role="list">
+        <li>
+          <span class="step-number" aria-hidden="true">01</span>
+          <h3>Заявка</h3><p>Оставляете задачу и требования</p>
+          <svg class="line-icon step-arrow" aria-hidden="true"><use href="#arrow"/></svg>
+        </li>
+        <li>
+          <span class="step-number" aria-hidden="true">02</span>
+          <h3>Подбор</h3><p>Формируем команду под ваш объект</p>
+          <svg class="line-icon step-arrow" aria-hidden="true"><use href="#arrow"/></svg>
+        </li>
+        <li>
+          <span class="step-number" aria-hidden="true">03</span>
+          <h3>Оформление</h3><p>Берём на себя все документы</p>
+          <svg class="line-icon step-arrow" aria-hidden="true"><use href="#arrow"/></svg>
+        </li>
+        <li>
+          <span class="step-number" aria-hidden="true">04</span>
+          <h3>Контроль</h3><p>Сопровождаем работу на объекте</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="why-us" class="why" aria-labelledby="why-title">
+      <div class="why-inner">
+        <div class="why-media">
+          <img src="assets/forklift-960.webp" srcset="assets/forklift-480.webp 480w, assets/forklift-960.webp 960w"
+            sizes="(max-width: 700px) 100vw, 42vw" width="960" height="640"
+            loading="lazy" alt="Погрузчик с горящим сигнальным фонарём">
+        </div>
+        <div class="why-content">
+          <p class="eyebrow">Почему мы</p>
+          <h2 id="why-title">Надёжный партнёр в обеспечении персоналом</h2>
+          <ul class="benefits">
+            <li><svg class="line-icon" aria-hidden="true"><use href="#bolt"/></svg><span>Оперативный<br class="desktop-break"> вывод персонала</span></li>
+            <li><svg class="line-icon" aria-hidden="true"><use href="#shield"/></svg><span>Оформление<br class="desktop-break"> по ТК РФ</span></li>
+            <li><svg class="line-icon" aria-hidden="true"><use href="#person"/></svg><span>Персональный<br class="desktop-break"> менеджер на объект</span></li>
+            <li><svg class="line-icon" aria-hidden="true"><use href="#layers"/></svg><span>Гибкие условия<br class="desktop-break"> сотрудничества</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq section-container" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-title">Частые<br> вопросы</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3><button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-term">
+            На какой срок можно привлечь персонал?<span class="faq-icon" aria-hidden="true"></span>
+          </button></h3>
+          <div class="faq-answer" id="faq-term" inert><div>
+            <p>Персонал можно привлечь под краткосрочные задачи или на длительный период. Конкретные сроки согласовываются с учетом потребностей объекта.</p>
+          </div></div>
+        </div>
+        <div class="faq-item">
+          <h3><button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-contract">
+            Вы оформляете сотрудников официально?<span class="faq-icon" aria-hidden="true"></span>
+          </button></h3>
+          <div class="faq-answer" id="faq-contract" inert><div>
+            <p>Да, оформление выполняется в соответствии с применимыми требованиями ТК РФ. Порядок взаимодействия и документы согласовываются до начала работ.</p>
+          </div></div>
+        </div>
+        <div class="faq-item">
+          <h3><button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-region">
+            В каких регионах вы работаете?<span class="faq-icon" aria-hidden="true"></span>
+          </button></h3>
+          <div class="faq-answer" id="faq-region" inert><div>
+            <p>Предоставление персонала рассматривается для объектов в разных регионах России. Доступность работников и сроки выхода необходимо уточнять по конкретному адресу.</p>
+          </div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacts" class="site-footer" aria-label="Контакты">
+    <div class="footer-inner">
+      <div class="footer-company">
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"></span>
+          Аутсорс персонала
+        </a>
+        <p>Аутсорсинг линейного персонала<br>для складов и производств</p>
+      </div>
+      <address class="footer-address">
+        <strong>ИП Севалкин Михаил Владимирович</strong>
+        <span>127349, г. Москва,<br>Алтуфьевское шоссе, д. 78</span>
+      </address>
+      <ul class="footer-phones">
+        <li><a href="tel:+79672603146"><svg aria-hidden="true"><use href="#phone"/></svg><span>+7 (967) 260-31-46</span></a></li>
+        <li><a href="tel:+79163861992"><svg aria-hidden="true"><use href="#phone"/></svg><span>+7 (916) 386-19-92</span></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <dialog id="warehouse" role="dialog" aria-modal="true" aria-labelledby="warehouse-title">
+    <div class="dialog-content">
+      <button class="dialog-close" type="button" aria-label="Закрыть" autofocus><span aria-hidden="true"></span></button>
+      <h2 id="warehouse-title">Складской персонал</h2>
+      <p>Предоставляем комплектовщиков, упаковщиков, сортировщиков и работников для приемки и размещения товаров. Персонал помогает выполнять сборку заказов, маркировку, погрузочно-разгрузочные и другие складские операции. Состав команды подбирается с учетом задач и особенностей вашего склада.</p>
+    </div>
+  </dialog>
+  <dialog id="production" role="dialog" aria-modal="true" aria-labelledby="production-title">
+    <div class="dialog-content">
+      <button class="dialog-close" type="button" aria-label="Закрыть" autofocus><span aria-hidden="true"></span></button>
+      <h2 id="production-title">Производственный персонал</h2>
+      <p>Предоставляем работников для производственных линий, сборки, фасовки, упаковки и сортировки готовой продукции. Персонал может выполнять вспомогательные операции на различных этапах производственного процесса. Количество сотрудников и требования к ним согласовываются под конкретный объект.</p>
+    </div>
+  </dialog>
+  <dialog id="loading" role="dialog" aria-modal="true" aria-labelledby="loading-title">
+    <div class="dialog-content">
+      <button class="dialog-close" type="button" aria-label="Закрыть" autofocus><span aria-hidden="true"></span></button>
+      <h2 id="loading-title">Грузчики и разнорабочие</h2>
+      <p>Предоставляем грузчиков и разнорабочих для погрузки, разгрузки, перемещения и размещения товаров и материалов. Работники могут помогать с сортировкой, упаковкой и другими вспомогательными задачами на складе или производстве. Подбираем численность бригады под предполагаемый объем работ.</p>
+    </div>
+  </dialog>
+</body>
+</html>
